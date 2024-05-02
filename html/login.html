@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Kart User Registration</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../css/styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-orange">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../images/logo.png" width="50"  class="d-inline-block align-top" alt="Logo">
+                <img src="../images/logo234.png" width="150"  class="d-inline-block align-top" alt="Logo">
+            
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <!-- ---------------navigation links for header -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <a class="btn btn-outline-primary ml-2" href="userregistration.html">Sign In</a>
+
+                <div class = "order-lg-2 nav-btns">
+                    <button type = "button" class = "btn position-relative">
+                        <i class = "fa fa-shopping-cart"></i>
+                        <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                    </button>
+                    <button type = "button" class = "btn position-relative">
+                        <i class = "fa fa-heart"></i>
+                        <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                    </button>
+            </div>
+        </div>
+    
+    </nav>
+<body>
+    <div id="formselect">
+    <a href="#loginForm">Login</a>
+    <a href="#registerForm">Register</a>
+
+</div>
+
+    <form id="loginForm" class="form-container">
+        <h2>Login</h2>
+        <!-- Login form fields -->
+        <div id="Login">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+         
+            </div>
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+
+    <form id="registerForm" class="form-container">
+        <h2>Register</h2>
+        <!-- Register form fields -->
+        <h2>User Registration</h2>
+    <form action="#" method="post" id="registrationForm">
+        <div id="Registration">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <p>How did you hear about us?</p>
+            <input type="radio" id="radio1" name="hearAbout" value="Social Media" required>
+            <label for="radio1">Social Media</label><br>
+            <input type="radio" id="radio2" name="hearAbout" value="Friend or Family">
+            <label for="radio2">Friend or Family</label><br>
+            <input type="radio" id="radio3" name="hearAbout" value="Internet Search">
+            <label for="radio3">Internet Search</label><br>
+            <input type="radio" id="radio4" name="hearAbout" value="Advertisement">
+            <label for="radio4">Advertisement</label>
+        </div>
+        <button type="submit">Submit</button>
+    </div>
+    </form>
+</body>
+</html>
