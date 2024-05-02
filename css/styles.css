@@ -18,6 +18,21 @@ body{
     background-position: center;
     background-repeat: no-repeat; */
 }
+/*css for login page start*/
+a {
+    text-decoration: none;
+}
+.login-page {
+    width: 100%;
+    height: 100;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+.form-right i {
+    font-size: 100px;
+}
+/*css for login page end*/
 
 /* button */
 .bg-primary{
@@ -291,3 +306,24 @@ footer a:hover{
 .center-heading {
     text-align: center;
 }
+.bg_color{
+    background-color: rgb(230, 230, 240);
+}
+
+/*css for user registration start*/
+label {
+    font-weight: 600;
+    color: #666;
+}
+body {
+  background: #f1f1f1;
+}
+.box8{
+  box-shadow: 0px 0px 5px 1px #999;
+}
+.mx-t3{
+  margin-top: -3rem;
+}
+
+
+/*css for user registration end*/

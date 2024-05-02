@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+
+    <!-- Purchaser Information Form -->
+    <form action="submit_order.php" method="post">
+        <h2>Purchaser Information</h2>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required maxlength="50">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+        <div>
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="">Select Payment Method</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Bank Transfer</option>
+            </select>
+        </div>
+        <button type="submit">Place Order</button>
+    </form>
+
+    <!-- Cart Items Table -->
+    <h2>Cart Items</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Product 1</td>
+                <td>2</td>
+                <td>$10.00</td>
+            </tr>
+            <tr>
+                <td>Product 2</td>
+                <td>1</td>
+                <td>$20.00</td>
+            </tr>
+            <tr>
+                <td>Product 3</td>
+                <td>3</td>
+                <td>$15.00</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
